@@ -13,6 +13,7 @@ copia = aleatoria[:,:,:,0].copy()
 print(f'\n\n{copia}')
 print(f'Shape: {copia.shape}')
 print(f'Size: {copia.size}')
+print(f'Dim: {copia.ndim}')
 
 """Punto 4"""
 copia2d = copia.reshape((2,8,5))[:,:,0].copy()
