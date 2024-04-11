@@ -36,10 +36,10 @@ def cargar(archivo):
         datos = pd.read_csv(archivo)
     return datos
 
-"""Punto 7"""
-def operaciones(array, tipo):
+"""Punto 7. suma, resta, mult, div, log, mean, std"""
+def operaciones(array, tipo, eje=0): #toma el eje 0 como default
     if tipo == 1:
-        pass
+        resultado = array
     elif tipo == 2:
         pass
     elif tipo == 3:
