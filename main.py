@@ -39,16 +39,19 @@ def cargar(archivo):
 """Punto 7. suma, resta, mult, div, log, mean, std"""
 def operaciones(array, tipo, eje=0): #toma el eje 0 como default
     if tipo == 1:
-        resultado = array
+        resultado = np.sum(array, axis=eje)
     elif tipo == 2:
-        pass
+        resultado = np.diff(array, axis=eje)
     elif tipo == 3:
-        pass
+        resultado = np.prod(array, axis=eje)
     elif tipo == 4:
         pass
     elif tipo == 5:
-        pass
+        resultado = np.mean(array, axis=eje)
     elif tipo == 6:
-        pass
-    elif tipo == 7:
-        pass
+        resultado = np.std(array, axis=eje)
+    return resultado
+
+"""Punto 9"""
+#data = cargar(archivo="senales_potencial.mat")
+#print(type(data))
