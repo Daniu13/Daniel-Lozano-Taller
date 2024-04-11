@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import scipy as sci
 
 """Daniel Lozano Simanca"""
 
@@ -26,3 +27,11 @@ def zu_pandas(array):
    return df
 df = zu_pandas(copia2d)
 print(f'\n\n{df}')
+
+"""Punto 6"""
+def cargar(archivo):
+    if archivo.endswith(".mat"):
+        datos = sci.loadmat(archivo)
+    elif archivo.endswith(".csv"):
+        datos = pd.read_csv(archivo)
+    return datos
