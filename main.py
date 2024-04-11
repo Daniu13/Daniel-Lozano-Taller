@@ -35,3 +35,20 @@ def cargar(archivo):
     elif archivo.endswith(".csv"):
         datos = pd.read_csv(archivo)
     return datos
+
+"""Punto 7"""
+def operaciones(array, tipo):
+    if tipo == 1:
+        pass
+    elif tipo == 2:
+        pass
+    elif tipo == 3:
+        pass
+    elif tipo == 4:
+        pass
+    elif tipo == 5:
+        pass
+    elif tipo == 6:
+        pass
+    elif tipo == 7:
+        pass
